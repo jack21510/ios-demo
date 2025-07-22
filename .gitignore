@@ -1,0 +1,10 @@
+*.DS_Store
+*.xcuserstate
+*.xcuserdata
+TuyaSmartPanelSDK/
+TuyaSmartPanelSDK.podspec
+Pods/
+Pods
+
+## User settings
+xcuserdata/
