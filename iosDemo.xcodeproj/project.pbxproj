@@ -49,16 +49,28 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
+				Resources/TaiwanCityCoordinates.json,
 			);
 			target = 437F2B1E2E2BB2A400437CEE /* iosDemo */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		7EA94E502E30B37C00FB2F19 /* Exceptions for "iosDemo" folder in "Compile Sources" phase from "iosDemo" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 437F2B1B2E2BB2A400437CEE /* Sources */;
+			membershipExceptions = (
+				Resources/TaiwanCityCoordinates.json,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		437F2B212E2BB2A400437CEE /* iosDemo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				437F2B872E2D204500437CEE /* Exceptions for "iosDemo" folder in "iosDemo" target */,
+				7EA94E502E30B37C00FB2F19 /* Exceptions for "iosDemo" folder in "Compile Sources" phase from "iosDemo" target */,
 			);
 			path = iosDemo;
 			sourceTree = "<group>";
@@ -339,13 +351,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iosDemo-iosDemoUITests/Pods-iosDemo-iosDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iosDemo-iosDemoUITests/Pods-iosDemo-iosDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -382,13 +390,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iosDemo/Pods-iosDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iosDemo/Pods-iosDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

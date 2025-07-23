@@ -8,21 +8,24 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @StateObject private var viewModel = WeatherViewModel()
+    
     var body: some View {
         BaseNavigationView(title: "首頁") {
-            ScrollView {
-                VStack(spacing: 20) {
-                    ForEach(0..<20) { i in
-                        NavigationLink(destination: Text("詳細頁 \(i)")) {
-                            Text("點我前往第 \(i) 頁")
-                                .padding()
-                                .frame(maxWidth: .infinity)
-                                .background(Color.blue.opacity(0.2))
-                                .cornerRadius(8)
-                        }
-                    }
+            List(viewModel.cityWeathers) { cityWeather in
+                VStack(alignment: .leading) {
+                    Text(cityWeather.cityName)
+                        .font(.headline)
+                    Text("溫度：\(cityWeather.temperature)")
+                    Text("時間：\(cityWeather.time)")
+                        .font(.caption)
+                        .foregroundColor(.gray)
                 }
-                .padding()
+            }
+            .navigationTitle("台灣天氣")
+            .onAppear {
+                viewModel.fetchWeather()
             }
         }
     }
