@@ -22,12 +22,10 @@ struct iosDemoApp: App {
                     LoginView()
                         .environmentObject(authViewModel)
                         .onOpenURL { url in
-                                GIDSignIn.sharedInstance.handle(url)
+                            GIDSignIn.sharedInstance.handle(url)
                         }
                         .onAppear {
-                                GIDSignIn.sharedInstance.restorePreviousSignIn { user, error in
-                                    // Check if `user` exists; otherwise, do something with `error`
-                                }
+                            authViewModel.restorePreviousSession()
                         }
                 }
             }

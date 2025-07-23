@@ -47,38 +47,14 @@ struct LoginView: View {
                     .padding(.horizontal)
             }
             
-            GoogleSignInButton(action: handleSignInButton)
+            GoogleSignInButton(action: {
+                authViewModel.signInWithGoogle()
+            })
         }
         .frame(maxHeight: .infinity, alignment: .top)
         .padding(.top, 60)
     }
     
-    func handleSignInButton() {
-        guard let presentingViewController = (UIApplication.shared.connectedScenes.first
-                  as? UIWindowScene)?.windows.first?.rootViewController
-              else {return}
-        
-        
-        GIDSignIn.sharedInstance.signIn(
-            withPresenting: presentingViewController) { signInResult, error in
-                guard let result = signInResult else {
-                    // Inspect error
-                    return
-                }
-                
-                let profile = signInResult.profile
-                print("👤 使用者名稱: \(profile?.name ?? "未知")")
-                print("📧 Email: \(profile?.email ?? "未知")")
-                print("🖼️ 頭像網址: \(profile?.imageURL(withDimension: 100)?.absoluteString ?? "無")")
-
-                let idToken = user.authentication.idToken
-                let accessToken = user.authentication.accessToken
-
-                print("🪪 ID Token: \(idToken ?? "無")")
-                print("🔑 Access Token: \(accessToken)")
-                // If sign in succeeded, display the app's main content View.
-            }
-    }
 }
 
 

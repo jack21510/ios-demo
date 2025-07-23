@@ -1,10 +1,3 @@
-//
-//  TaiwanCityCoordinates.json
-//  iosDemo
-//
-//  Created by Jack on 2025/7/23.
-//
-
 [
   { "name": "台北市", "latitude": 25.0330, "longitude": 121.5654 },
   { "name": "新北市", "latitude": 25.0169, "longitude": 121.4628 },
