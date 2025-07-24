@@ -27,7 +27,7 @@ struct ProfileView: View {
                 .clipShape(Circle())
                 .padding(.top, 32)
 
-                Text(authViewModel.currentUserData?.name ?? "未登入")
+                Text(authViewModel.userName ?? "未登入")
                     .font(.title2)
                     .fontWeight(.medium)
 
