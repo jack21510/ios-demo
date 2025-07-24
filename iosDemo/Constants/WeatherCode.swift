@@ -44,4 +44,21 @@ struct WeatherCodeConstants {
     static func description(for code: Int) -> String {
         return descriptions[code] ?? "未知"
     }
+    
+    static func animationName(for code: Int) -> String {
+            switch code {
+            case 0: // 晴
+                return "sunny"
+            case 1, 2: // 晴有雲
+                return "windy"
+            case 3, 45, 48: // 多雲
+                return "cloudy"
+            case 51...67, 80...82, 95...99: // 雨
+                return "rainy"
+            case 71, 73, 75, 77, 85, 86: // 各種雪
+                return "sonw"
+            default:
+                return "sunny"
+            }
+        }
 }

@@ -53,12 +53,13 @@ class WeatherManager {
         for city in cities {
             group.enter()
             
-            provider.request(.forecast(latitude: city.latitude, longitude: city.longitude, hourly: "temperature_2m")) { result in
+            provider.request(.forecast(latitude: city.latitude, longitude: city.longitude, hourly: "temperature_2m,weathercode")) { result in
                 defer { group.leave() }
 
                 switch result {
                 case .success(let response):
                     do {
+                        
                         let data = try JSONDecoder().decode(Forecast.self, from: response.data)
                         results[city.name] = data
                     } catch {

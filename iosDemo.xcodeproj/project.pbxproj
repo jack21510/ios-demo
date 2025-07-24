@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		045292275C1DFC93BBE439EA /* Pods_iosDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C1136D24D8DE9536FD7DF4 /* Pods_iosDemoTests.framework */; };
+		39017A25E8BB6B74C8F83B95 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		48A83B5CACB5A416DABE9944 /* Pods_iosDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D60F489BD6C9CC2D87316D /* Pods_iosDemo.framework */; };
 		AB8E10B7E4BE562AD57857EA /* Pods_iosDemo_iosDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 685E46F2FB7C44752F7080F1 /* Pods_iosDemo_iosDemoUITests.framework */; };
+		F5A5D47FBAA27F87D066EBB4 /* Pods_iosDemo_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23937F61FBE2ECFDA9E4E1C /* Pods_iosDemo_dev.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +38,15 @@
 		437F2B1F2E2BB2A400437CEE /* iosDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		437F2B2C2E2BB2A600437CEE /* iosDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		437F2B362E2BB2A600437CEE /* iosDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43E808962E32552700BF7CD3 /* iosDemo_dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosDemo_dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		532CB5EF676181F03697E10C /* Pods-iosDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosDemo.release.xcconfig"; path = "Target Support Files/Pods-iosDemo/Pods-iosDemo.release.xcconfig"; sourceTree = "<group>"; };
 		685E46F2FB7C44752F7080F1 /* Pods_iosDemo_iosDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosDemo_iosDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6AD57047D24BA1798BB62B30 /* Pods-iosDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosDemo.debug.xcconfig"; path = "Target Support Files/Pods-iosDemo/Pods-iosDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		71D60F489BD6C9CC2D87316D /* Pods_iosDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7310555AD7426313BB06062 /* Pods-iosDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosDemo.release.xcconfig"; path = "Target Support Files/Pods-iosDemo/Pods-iosDemo.release.xcconfig"; sourceTree = "<group>"; };
+		AF8E9093A242CE9B83360DF1 /* Pods-iosDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosDemo.debug.xcconfig"; path = "Target Support Files/Pods-iosDemo/Pods-iosDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B23937F61FBE2ECFDA9E4E1C /* Pods_iosDemo_dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosDemo_dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C1136D24D8DE9536FD7DF4 /* Pods_iosDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D198FF275A87CEF75E475003 /* Pods-iosDemo_dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosDemo_dev.release.xcconfig"; path = "Target Support Files/Pods-iosDemo_dev/Pods-iosDemo_dev.release.xcconfig"; sourceTree = "<group>"; };
+		ED729D5B8C0F14086CD81E24 /* Pods-iosDemo_dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosDemo_dev.debug.xcconfig"; path = "Target Support Files/Pods-iosDemo_dev/Pods-iosDemo_dev.debug.xcconfig"; sourceTree = "<group>"; };
 		FD6ACB0E54764749846F538A /* Pods-iosDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosDemoTests.release.xcconfig"; path = "Target Support Files/Pods-iosDemoTests/Pods-iosDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,8 +55,17 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
+				"iosDemo_dev-Info.plist",
 			);
 			target = 437F2B1E2E2BB2A400437CEE /* iosDemo */;
+		};
+		43E808982E32552700BF7CD3 /* Exceptions for "iosDemo" folder in "iosDemo_dev" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+				"iosDemo_dev-Info.plist",
+			);
+			target = 43E8088C2E32552700BF7CD3 /* iosDemo_dev */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -59,6 +74,7 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				437F2B872E2D204500437CEE /* Exceptions for "iosDemo" folder in "iosDemo" target */,
+				43E808982E32552700BF7CD3 /* Exceptions for "iosDemo" folder in "iosDemo_dev" target */,
 			);
 			path = iosDemo;
 			sourceTree = "<group>";
@@ -81,6 +97,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48A83B5CACB5A416DABE9944 /* Pods_iosDemo.framework in Frameworks */,
+				39017A25E8BB6B74C8F83B95 /* (null) in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +117,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		43E8088F2E32552700BF7CD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5A5D47FBAA27F87D066EBB4 /* Pods_iosDemo_dev.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -109,6 +134,7 @@
 				71D60F489BD6C9CC2D87316D /* Pods_iosDemo.framework */,
 				685E46F2FB7C44752F7080F1 /* Pods_iosDemo_iosDemoUITests.framework */,
 				B5C1136D24D8DE9536FD7DF4 /* Pods_iosDemoTests.framework */,
+				B23937F61FBE2ECFDA9E4E1C /* Pods_iosDemo_dev.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -131,6 +157,7 @@
 				437F2B1F2E2BB2A400437CEE /* iosDemo.app */,
 				437F2B2C2E2BB2A600437CEE /* iosDemoTests.xctest */,
 				437F2B362E2BB2A600437CEE /* iosDemoUITests.xctest */,
+				43E808962E32552700BF7CD3 /* iosDemo_dev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,12 +165,14 @@
 		8DDACF50F74651054D2512C9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6AD57047D24BA1798BB62B30 /* Pods-iosDemo.debug.xcconfig */,
-				A7310555AD7426313BB06062 /* Pods-iosDemo.release.xcconfig */,
 				358300DAFAE4B3C4A37D0B68 /* Pods-iosDemo-iosDemoUITests.debug.xcconfig */,
 				40590E5E592840BEDAA9516E /* Pods-iosDemo-iosDemoUITests.release.xcconfig */,
 				2E0DEFCDD386E04BF9B2BCA2 /* Pods-iosDemoTests.debug.xcconfig */,
 				FD6ACB0E54764749846F538A /* Pods-iosDemoTests.release.xcconfig */,
+				AF8E9093A242CE9B83360DF1 /* Pods-iosDemo.debug.xcconfig */,
+				532CB5EF676181F03697E10C /* Pods-iosDemo.release.xcconfig */,
+				ED729D5B8C0F14086CD81E24 /* Pods-iosDemo_dev.debug.xcconfig */,
+				D198FF275A87CEF75E475003 /* Pods-iosDemo_dev.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -218,6 +247,28 @@
 			productReference = 437F2B362E2BB2A600437CEE /* iosDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		43E8088C2E32552700BF7CD3 /* iosDemo_dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43E808932E32552700BF7CD3 /* Build configuration list for PBXNativeTarget "iosDemo_dev" */;
+			buildPhases = (
+				9296C930DD71DD667EDEADC7 /* [CP] Check Pods Manifest.lock */,
+				43E8088E2E32552700BF7CD3 /* Sources */,
+				43E8088F2E32552700BF7CD3 /* Frameworks */,
+				43E808912E32552700BF7CD3 /* Resources */,
+				31A77ECA376F0156290CA1AB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				437F2B212E2BB2A400437CEE /* iosDemo */,
+			);
+			name = iosDemo_dev;
+			productName = iosDemo;
+			productReference = 43E808962E32552700BF7CD3 /* iosDemo_dev.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -258,6 +309,7 @@
 				437F2B1E2E2BB2A400437CEE /* iosDemo */,
 				437F2B2B2E2BB2A600437CEE /* iosDemoTests */,
 				437F2B352E2BB2A600437CEE /* iosDemoUITests */,
+				43E8088C2E32552700BF7CD3 /* iosDemo_dev */,
 			);
 		};
 /* End PBXProject section */
@@ -284,6 +336,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		43E808912E32552700BF7CD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -303,6 +362,49 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-iosDemo-iosDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31A77ECA376F0156290CA1AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iosDemo_dev/Pods-iosDemo_dev-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iosDemo_dev/Pods-iosDemo_dev-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iosDemo_dev/Pods-iosDemo_dev-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9296C930DD71DD667EDEADC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iosDemo_dev-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -339,9 +441,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iosDemo-iosDemoUITests/Pods-iosDemo-iosDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iosDemo-iosDemoUITests/Pods-iosDemo-iosDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -378,9 +484,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iosDemo/Pods-iosDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iosDemo/Pods-iosDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -405,6 +515,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		437F2B322E2BB2A600437CEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43E8088E2E32552700BF7CD3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -480,7 +597,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -538,7 +655,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -550,13 +667,16 @@
 		};
 		437F2B412E2BB2A600437CEE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6AD57047D24BA1798BB62B30 /* Pods-iosDemo.debug.xcconfig */;
+			baseConfigurationReference = AF8E9093A242CE9B83360DF1 /* Pods-iosDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2R3QV3G6D5;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = R92XSRH6XC;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -566,14 +686,16 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D PROD";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jack.personal.iosDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = jackDemo;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -582,13 +704,16 @@
 		};
 		437F2B422E2BB2A600437CEE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7310555AD7426313BB06062 /* Pods-iosDemo.release.xcconfig */;
+			baseConfigurationReference = 532CB5EF676181F03697E10C /* Pods-iosDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2R3QV3G6D5;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = R92XSRH6XC;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -598,14 +723,16 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D PROD";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jack.personal.iosDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = jackDemo;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -688,6 +815,82 @@
 			};
 			name = Release;
 		};
+		43E808942E32552700BF7CD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED729D5B8C0F14086CD81E24 /* Pods-iosDemo_dev.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-dev";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = R92XSRH6XC;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iosDemo/iosDemo_dev-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEV";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jack.personal.iosDemo.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = jackDemo_dev;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43E808952E32552700BF7CD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D198FF275A87CEF75E475003 /* Pods-iosDemo_dev.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-dev";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = R92XSRH6XC;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iosDemo/iosDemo_dev-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEV";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jack.personal.iosDemo.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = jackDemo_dev;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -723,6 +926,15 @@
 			buildConfigurations = (
 				437F2B472E2BB2A600437CEE /* Debug */,
 				437F2B482E2BB2A600437CEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43E808932E32552700BF7CD3 /* Build configuration list for PBXNativeTarget "iosDemo_dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43E808942E32552700BF7CD3 /* Debug */,
+				43E808952E32552700BF7CD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

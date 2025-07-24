@@ -8,7 +8,11 @@
 enum Constants {
     
     enum API {
+        #if DEV
         static let baseUrl = "https://api.open-meteo.com/v1"
+        #else
+        static let baseUrl = "https://api.open-meteo.com/v1"
+        #endif
     }
     
     

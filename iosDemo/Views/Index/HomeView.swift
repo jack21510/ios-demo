@@ -13,17 +13,28 @@ struct HomeView: View {
     
     var body: some View {
         BaseNavigationView(title: "首頁") {
-            List(viewModel.cityWeathers) { cityWeather in
-                VStack(alignment: .leading) {
-                    Text(cityWeather.cityName)
-                        .font(.headline)
-                    Text("溫度：\(cityWeather.temperature)")
-                    Text("時間：\(cityWeather.time)")
-                        .font(.caption)
-                        .foregroundColor(.gray)
+            ScrollView {
+                LazyVStack(spacing: 16) {
+                    ForEach(viewModel.cityWeathers) { city in
+                        NavigationLink(destination: WeatherDetailView(
+                            cityName: city.cityName,
+                            temperature: city.temperature,
+                            time: city.time,
+                            animationName: city.animationName
+                        )) {
+                            WeatherCard(
+                                city: city.cityName,
+                                temperature: city.temperature,
+                                time: city.time,
+                                animationName: city.animationName
+                            )
+                        }
+                        .buttonStyle(PlainButtonStyle())
+                    }
                 }
+                .padding(.horizontal, 16)
+                .padding(.top, 16)
             }
-            .navigationTitle("台灣天氣")
             .onAppear {
                 viewModel.fetchWeather()
             }
@@ -32,6 +43,6 @@ struct HomeView: View {
     
 }
 
-#Preview {
-    HomeView()
-}
+//#Preview {
+//    HomeView()
+//}

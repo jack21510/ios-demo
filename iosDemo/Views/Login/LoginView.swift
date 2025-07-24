@@ -41,7 +41,7 @@ struct LoginView: View {
                 Text("登入")
                     .frame(maxWidth: .infinity)
                     .padding()
-                    .background(Color.blue)
+                    .background(Color.primaryColor)
                     .foregroundColor(.white)
                     .cornerRadius(8)
                     .padding(.horizontal)
@@ -50,6 +50,7 @@ struct LoginView: View {
             GoogleSignInButton(action: {
                 authViewModel.signInWithGoogle()
             })
+            .padding()
         }
         .frame(maxHeight: .infinity, alignment: .top)
         .padding(.top, 60)
@@ -59,7 +60,7 @@ struct LoginView: View {
 
 
 
-
-#Preview {
-    LoginView()
-}
+//
+//#Preview {
+//    LoginView()
+//}

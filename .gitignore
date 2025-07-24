@@ -5,6 +5,10 @@ TuyaSmartPanelSDK/
 TuyaSmartPanelSDK.podspec
 Pods/
 Pods
+vendor
+.bundle/
+.env
+fastlane
 
 ## User settings
 xcuserdata/

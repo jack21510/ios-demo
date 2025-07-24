@@ -13,21 +13,16 @@ struct iosDemoApp: App {
     
     @StateObject private var authViewModel = AuthViewModel()
 
-        var body: some Scene {
-            WindowGroup {
-                if authViewModel.isLoggedIn {
-                    MainTabView()
-                        .environmentObject(authViewModel)
-                } else {
-                    LoginView()
-                        .environmentObject(authViewModel)
-                        .onOpenURL { url in
-                            GIDSignIn.sharedInstance.handle(url)
-                        }
-                        .onAppear {
-                            authViewModel.restorePreviousSession()
-                        }
+    var body: some Scene {
+        WindowGroup {
+            RootView()
+                .environmentObject(authViewModel)
+                .onOpenURL { url in
+                    GIDSignIn.sharedInstance.handle(url)
                 }
-            }
+                .onAppear {
+                    authViewModel.restorePreviousSession()
+                }
         }
+    }
 }

@@ -14,11 +14,12 @@ struct MainTabView: View {
                 .tabItem {
                     Label("首頁", systemImage: "house")
                 }
-            SettingView()
+            ProfileView()
                 .tabItem {
-                    Label("設定", systemImage: "gearshape")
+                    Label("個人", systemImage: "gearshape")
                 }
         }
+        .tint(.primaryColor)
     }
 }
 
