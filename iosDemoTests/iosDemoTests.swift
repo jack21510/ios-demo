@@ -32,5 +32,26 @@ final class iosDemoTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testFetchWeatherForAllCities() {
+        let expectation = self.expectation(description: "Fetch weather for all cities")
+
+        WeatherManager.shared.fetchWeatherForAllCities { results in
+            // 驗證至少有一個城市資料
+            XCTAssertFalse(results.isEmpty, "應該要有至少一筆城市天氣資料")
+
+            // 驗證台北市
+            if let taipeiWeather = results["台北市"] {
+                XCTAssertGreaterThan(taipeiWeather.latitude, 0)
+                XCTAssertEqual(taipeiWeather.hourly.temperature_2m.count, taipeiWeather.hourly.time.count, "溫度與時間數量應一致")
+            }
+
+            // 標記 expectation 為完成
+            expectation.fulfill()
+        }
+
+        // 等待最多 5 秒
+        wait(for: [expectation], timeout: 5.0)
+    }
 
 }

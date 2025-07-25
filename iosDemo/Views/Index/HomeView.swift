@@ -16,20 +16,17 @@ struct HomeView: View {
             ScrollView {
                 LazyVStack(spacing: 16) {
                     ForEach(viewModel.cityWeathers) { city in
-                        NavigationLink(destination: WeatherDetailView(
-                            cityName: city.cityName,
-                            temperature: city.temperature,
-                            time: city.time,
-                            animationName: city.animationName
-                        )) {
-                            WeatherCard(
-                                city: city.cityName,
-                                temperature: city.temperature,
-                                time: city.time,
-                                animationName: city.animationName
-                            )
+                        NavigationLink {
+                            WeatherDetailView(city: city)
+                        } label : {
+                            WeatherCard(city: city)
                         }
                         .buttonStyle(PlainButtonStyle())
+//
+//                        NavigationLink(destination: WeatherDetailView(city: city)) {
+//                            WeatherCard(city: city)
+//                        }
+//                        .buttonStyle(PlainButtonStyle())
                     }
                 }
                 .padding(.horizontal, 16)

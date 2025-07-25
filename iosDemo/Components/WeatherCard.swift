@@ -8,14 +8,11 @@
 import SwiftUI
 
 struct WeatherCard: View {
-    let city: String
-    let temperature: String
-    let time: String
-    let animationName: String
+    let city: CityWeather
     
     var body: some View {
         ZStack {
-            LottieView(animationName: animationName)
+            LottieView(animationName: city.animationName)
                 .ignoresSafeArea()
                 .frame(height: 120, alignment: .leading)
                 .aspectRatio(contentMode: .fit)
@@ -23,10 +20,10 @@ struct WeatherCard: View {
                 .opacity(0.4) // 調整透明度讓文字更清楚
 
             VStack(alignment: .leading, spacing: 8) {
-                Text(city)
+                Text(city.cityName)
                     .font(.headline)
-                Text("溫度：\(temperature)")
-                Text("時間：\(time)")
+                Text("溫度：\(city.temperature)")
+                Text("時間：\(city.time)")
                     .font(.caption)
                     .foregroundColor(.gray)
             }

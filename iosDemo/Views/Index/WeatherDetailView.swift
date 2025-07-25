@@ -8,25 +8,22 @@
 import SwiftUI
 
 struct WeatherDetailView: View {
-    let cityName: String
-    let temperature: String
-    let time: String
-    let animationName: String
+    let city: CityWeather
 
     var body: some View {
         VStack(spacing: 16) {
-            LottieView(animationName: animationName)
+            LottieView(animationName: city.animationName)
                 .frame(height: 150)
                 .padding()
 
-            Text(cityName)
+            Text(city.cityName)
                 .font(.largeTitle)
                 .bold()
 
-            Text("溫度：\(temperature)")
+            Text("溫度：\(city.temperature)")
                 .font(.title2)
 
-            Text("時間：\(formattedTime(date: time))")
+            Text("時間：\(formattedTime(date: city.time))")
                 .font(.subheadline)
                 .foregroundColor(.gray)
 
